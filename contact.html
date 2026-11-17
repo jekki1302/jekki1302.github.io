@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         .contact-links {
@@ -45,11 +45,41 @@
         }
 
         .contact-label {
+            font-weight: normal;
+        }
+
+        .contact-card-content {
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            min-width: 0;
+        }
+
+        .contact-description {
+            font-size: 0.78rem;
+            opacity: 0.65;
+            line-height: 1.5;
         }
 
         .contact-arrow {
             opacity: 0.6;
+        }
+
+        .contact-category {
+            margin-top: 2rem;
+        }
+
+        .contact-category h3 {
+            font-size: 1rem;
+            font-weight: normal;
+            opacity: 0.75;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-category p {
+            font-size: 0.9rem;
+            opacity: 0.7;
         }
     </style>
 </head>
@@ -63,16 +93,27 @@
     <span class="name">jekki</span>
 
     <div class="icons">
-      <a href="https://github.com/shreyasjv"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/shreyas-jv" target="_blank" rel="noopener">
-      <i class="fab fa-linkedin"></i></a>
-      <a href="mailto:shreyas1302@example.com"><i class="fas fa-envelope"></i></a>
-      <button id="theme-toggle"><i class="fas fa-sun"></i></button>
+      <a href="https://github.com/shreyasjv">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/shreyas-jv/"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="mailto:shreyas1302@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <button id="theme-toggle">
+        <i class="fas fa-sun"></i>
+      </button>
     </div>
   </div>
 
   <p class="tagline">
-    high-energy theoretical physicist
+    just curious, not judgmental
   </p>
 
   <nav>
@@ -89,6 +130,7 @@
   </nav>
 </header>
 
+
 <section id="contact-links">
 
     <h2>contact</h2>
@@ -96,8 +138,11 @@
 
     <p>
         if we know each other already, any of these are fine.
-        if we don't, email is probably best.
+        if we don't, feel free to say hello.
     </p>
+
+
+    <!-- SOCIAL -->
 
     <div class="contact-links">
 
@@ -111,16 +156,14 @@
         </a>
 
         <a class="contact-card"
-           href="https://www.facebook.com/shreyas.jv/"
-           target="_blank"
-           rel="noopener">
-            <i class="fab fa-facebook"></i>
-            <span class="contact-label">facebook</span>
+           href="sms:+15186059196">
+            <i class="fas fa-comment"></i>
+            <span class="contact-label">text me</span>
             <span class="contact-arrow">→</span>
         </a>
 
         <a class="contact-card"
-           href="https://wa.me/15186059196"
+           href="https://wa.me/15186059196?text=Hey%21%20We%20just%20met.%20Thought%20I%27d%20say%20hi%20%3A%29"
            target="_blank"
            rel="noopener">
             <i class="fab fa-whatsapp"></i>
@@ -129,73 +172,147 @@
         </a>
 
         <a class="contact-card"
-           href="https://www.linkedin.com/in/shreyas-jv/"
+           href="https://www.facebook.com/shreyas.jv/"
            target="_blank"
            rel="noopener">
-            <i class="fab fa-linkedin"></i>
-            <span class="contact-label">linkedin</span>
+            <i class="fab fa-facebook-messenger"></i>
+            <span class="contact-label">facebook messenger</span>
             <span class="contact-arrow">→</span>
         </a>
 
-        <a class="contact-card"
-           href="https://www.serializd.com/user/shreyasjv/profile"
-           target="_blank"
-           rel="noopener">
-            <i class="fas fa-tv"></i>
-            <span class="contact-label">tv</span>
-            <span class="contact-arrow">→</span>
-        </a>
-        
-        <a class="contact-card"
-           href="https://boxd.it/1ZVhP"
-           target="_blank"
-           rel="noopener">
-            <i class="fas fa-film"></i>
-            <span class="contact-label">letterboxd</span>
-            <span class="contact-arrow">→</span>
-        </a>
+    </div>
 
-        <a class="contact-card"
-           href="https://www.goodreads.com/user/show/128870420"
-           target="_blank"
-           rel="noopener">
-            <i class="fas fa-book"></i>
-            <span class="contact-label">goodreads</span>
-            <span class="contact-arrow">→</span>
-        </a>
 
-        <a class="contact-card"
-           href="https://www.imdb.com/user/ur123560545/watchlist"
-           target="_blank"
-           rel="noopener">
-            <i class="fas fa-clapperboard"></i>
-            <span class="contact-label">imdb</span>
-            <span class="contact-arrow">→</span>
-        </a>
+    <!-- PROFESSIONAL -->
 
-        <a class="contact-card"
-           href="https://musicboard.app/shreyasjv"
-           target="_blank"
-           rel="noopener">
-            <i class="fas fa-music"></i>
-            <span class="contact-label">musicboard</span>
-            <span class="contact-arrow">→</span>
-        </a>
+    <div class="contact-category">
 
-        <a class="contact-card"
-           href="mailto:shreyas1302@gmail.com">
-            <i class="fas fa-envelope"></i>
-            <span class="contact-label">personal email</span>
-            <span class="contact-arrow">→</span>
-        </a>
+        <h3>professional</h3>
 
-        <a class="contact-card"
-           href="mailto:sjekkivenkateshwarulu@albany.edu">
-            <i class="fas fa-graduation-cap"></i>
-            <span class="contact-label">university email</span>
-            <span class="contact-arrow">→</span>
-        </a>
+        <div class="contact-links">
 
+            <a class="contact-card"
+               href="https://www.linkedin.com/in/shreyas-jv/"
+               target="_blank"
+               rel="noopener">
+                <i class="fab fa-linkedin"></i>
+                <span class="contact-label">linkedin</span>
+                <span class="contact-arrow">→</span>
+            </a>
+
+            <a class="contact-card"
+               href="mailto:sjekkivenkateshwarulu@albany.edu">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="contact-label">university email</span>
+                <span class="contact-arrow">→</span>
+            </a>
+
+            <a class="contact-card"
+               href="mailto:shreyas1302@gmail.com">
+                <i class="fas fa-envelope"></i>
+                <span class="contact-label">personal email</span>
+                <span class="contact-arrow">→</span>
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- INTERESTS -->
+
+    <div class="contact-category">
+
+        <h3>more interesting places to find me.</h3>
+
+        <div class="contact-links">
+
+            <a class="contact-card"
+               href="https://www.serializd.com/user/shreyasjv/profile"
+               target="_blank"
+               rel="noopener">
+                <i class="fas fa-tv"></i>
+                <div class="contact-card-content">
+                    <span class="contact-label">serializd</span>
+                    <span class="contact-description">
+                        arrested development but still breaking bad takes
+                    </span>
+                </div>
+                <span class="contact-arrow">→</span>
+            </a>
+
+            <a class="contact-card"
+               href="https://boxd.it/1ZVhP"
+               target="_blank"
+               rel="noopener">
+                <i class="fas fa-film"></i>
+                <div class="contact-card-content">
+                    <span class="contact-label">letterboxd</span>
+                    <span class="contact-description">
+                        my reviews be based and confused
+                    </span>
+                </div>
+                <span class="contact-arrow">→</span>
+            </a>
+
+            <a class="contact-card"
+               href="https://www.goodreads.com/user/show/128870420"
+               target="_blank"
+               rel="noopener">
+                <i class="fas fa-book"></i>
+                <div class="contact-card-content">
+                    <span class="contact-label">goodreads</span>
+                    <span class="contact-description">
+                        a series of (un)fortunate reads
+                    </span>
+                </div>
+                <span class="contact-arrow">→</span>
+            </a>
+
+            <a class="contact-card"
+               href="https://musicboard.app/shreyasjv"
+               target="_blank"
+               rel="noopener">
+                <i class="fas fa-music"></i>
+                <div class="contact-card-content">
+                    <span class="contact-label">musicboard</span>
+                    <span class="contact-description">
+                        the band is just fantastic, that's really what I think,
+                        and don't ask me why it's my kink.
+                    </span>
+                </div>
+                <span class="contact-arrow">→</span>
+            </a>
+
+            <a class="contact-card"
+               href="https://www.imdb.com/user/ur123560545/watchlist"
+               target="_blank"
+               rel="noopener">
+                <i class="fas fa-clapperboard"></i>
+                <span class="contact-label">imdb watchlist</span>
+                <span class="contact-arrow">→</span>
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- SAVE CONTACT -->
+
+    <div class="contact-category">
+
+        <h3>keep in touch</h3>
+
+        <div class="contact-links">
+
+            <a class="contact-card"
+               href="contact.vcf"
+               download>
+                <i class="fas fa-address-card"></i>
+                <span class="contact-label">save my contact</span>
+                <span class="contact-arrow">↓</span>
+            </a>
+
+        </div>
     </div>
 
 </section>
